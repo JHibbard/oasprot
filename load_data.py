@@ -40,6 +40,5 @@ proteins = [
     Protein(id='A0A0G2JX93', name='A0A0G2JX93_RAT'),
 ]
 
-r = db.bulk_save_objects(proteins, return_defaults=True)
+db.bulk_save_objects(proteins)
 db.commit()
-print(r)
